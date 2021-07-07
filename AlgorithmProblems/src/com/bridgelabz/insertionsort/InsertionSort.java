@@ -1,9 +1,22 @@
 package com.bridgelabz.insertionsort;
 
 import java.util.Arrays;
-
+/**
+ * 
+ * @author Sanket
+ * Sorting of generic type of array elements using
+ * Insertion sort
+ *
+ */
 public class InsertionSort {
 
+	/**
+	 * 
+	 * @param <T>
+	 * @param inputArray
+	 * Method to sort array elements using Insertion sort 
+	 * technique in generic type
+	 */
 	private<T extends Comparable<T>> void insertionSort(T[] inputArray)
 	{
 		int i,j;
