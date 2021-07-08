@@ -43,10 +43,12 @@ public class MergeSort<T extends Comparable<T>> {
         }
 
         // copy remaining elements of leftArray[] if any
-        while (leftIndex < leftArray.length) array[currentIndex++] = leftArray[leftIndex++];
+        while (leftIndex < leftArray.length) 
+        	array[currentIndex++] = leftArray[leftIndex++];
 
         // copy remaining elements of rightArray[] if any
-        while (rightIndex < rightArray.length) array[currentIndex++] = rightArray[rightIndex++];
+        while (rightIndex < rightArray.length) 
+        	array[currentIndex++] = rightArray[rightIndex++];
     }
     // main function that sorts array[start..end] using merge()
     void mergeSort(T[] array, int start, int end)
@@ -69,7 +71,7 @@ public class MergeSort<T extends Comparable<T>> {
     	 String[] arrayOfStrings = {"You","will","never","always","be","motivated.","You","have","to","learn","to","be","disciplined"};
          MergeSort<String> stringSorter   = new MergeSort<>();
          stringSorter.mergeSort(arrayOfStrings, 0, arrayOfStrings.length - 1);
-         System.out.println("Array after sorting ::\n"+Arrays.toString(arrayOfStrings));
+         System.out.println("Array After Sorting\n"+Arrays.toString(arrayOfStrings));
 	}
     
 }
